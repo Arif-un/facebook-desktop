@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title id="window-title">Facebook</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id='wrapper'>
+      <div id="load">
+        <img id="logo" src="./img/fb.png" alt="facebook logo">
+        <div class="loading-dots">
+          <div class="loading-dots--dot"></div>
+          <div class="loading-dots--dot"></div>
+          <div class="loading-dots--dot"></div>
+        </div>
+        <h3 id="no-net">No Internet</h3>
+      </div>
+      <div id="handleBarWrapper">
+        <div>
+          <button title="Close" id="close" class="btn">&nbsp;</button>
+          <button title="Maximize" id="maximize" class="btn">&nbsp;</button>
+          <button title="Minimize" id="minimize" class="btn">&nbsp;</button>
+          <button title="Reload" id="reload" class="btn">↻</button>
+        </div>
+        <div title="Title Bar" id="handleBar">
+          <span id="title">Facebook</span>
+        </div>
+      </div>
+      <webview plugins id="webview" src="https://www.facebook.com/" style="width:100%;height: 95%;">
+        <div class="indicator"></div>
+      </webview>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+
+</html>

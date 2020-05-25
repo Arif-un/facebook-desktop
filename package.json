@@ -1,0 +1,33 @@
+{
+  "name": "facebook-desktop",
+  "version": "1.0.0",
+  "description": "Facebook App For Windows Desktop",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "mohd-arif-un",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "electron-builder": "^21.2.0",
+    "eslint": "^6.2.1",
+    "eslint-config-standard": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "electron": "^5.0.7"
+  },
+  "build": {
+    "appId": "com.ipenywis.app",
+    "productName": "Facebook Desktop",
+    "target": "portable",
+    "directories": {
+      "output": "build"
+    }
+  }
+}
